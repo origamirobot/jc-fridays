@@ -39,8 +39,14 @@
                 <ul data-role="listview" data-filter="true" id="event-list">
                 </ul>
             </div>
-            <div data-role="footer">
-                
+            <div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#main-page" data-icon="search" class="ui-btn-active ui-state-persist">Events</a></li>
+						<li><a href="#blog" data-icon="grid">Blog</a></li>
+						<li><a href="#about" data-icon="info">About</a></li>
+					</ul>
+				</div>                
             </div>
         </div>
         
@@ -58,14 +64,68 @@
                 <p id="detail-where"><strong>Where:</strong> <span></span></p>
                 <p id="detail-when"><strong>When:</strong> <span></span></p>
                 <p id="detail-descr"></p>
-                <a href="#" data-role="button" id="get-directions">Get Directions</a>
+                <a href="#"  target="_blank" data-role="button" id="get-directions">Get Directions</a>
             </div>
-            <div data-role="footer">
-                
+            <div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#main-page" data-icon="search" class="ui-btn-active ui-state-persist">Events</a></li>
+						<li><a href="#blog" data-icon="grid">Blog</a></li>
+						<li><a href="#about" data-icon="info">About</a></li>
+					</ul>
+				</div>                
             </div>
             
         </div>
-        
+       
+	   
+        <div data-role="page" id="blog">
+            <div data-role="header">
+                <h1>JC Fridays Blog</h1>
+            </div>
+            
+            <div data-role="content">
+
+            </div>
+            <div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#main-page" data-icon="search">Events</a></li>
+						<li><a href="#blog" data-icon="grid" class="ui-btn-active ui-state-persist">Blog</a></li>
+						<li><a href="#about" data-icon="info">About</a></li>
+					</ul>
+				</div>                
+            </div>
+            
+        </div>
+       
+	   
+	   
+        <div data-role="page" id="about">
+            <div data-role="header">
+                <h1>About JC Fridays</h1>
+            </div>
+            
+            <div data-role="content">
+				<p>Based in Jersey City, Art House Productions inspires, nurtures annnnnd promotes the arts in our community through accessible, multi-diciplinary initiatives including JC Fridays.</p>
+				<p>JC Fridays is a quarterly arts festival held throughout Jersey City at the start of every season: March, June, September, December. Local businesses and arts organizations join together to celebrate art and culture with a wide range of free events for the public. Programs include art openings and exhibits, music, performance, film/video screenings and more.</p>
+				<p>This application is built by the Click Ninjas development house.  Like us on Facebook!</p>
+            </div>
+            <div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#main-page" data-icon="search">Events</a></li>
+						<li><a href="#blog" data-icon="grid">Blog</a></li>
+						<li><a href="#about" data-icon="info" class="ui-btn-active ui-state-persist">About</a></li>
+					</ul>
+				</div>                
+            </div>
+            
+        </div>
+       
+	   
+	   
+	    
         <script type="text/javascript" src="cordova-2.3.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

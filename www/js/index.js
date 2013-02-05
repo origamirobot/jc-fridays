@@ -35,13 +35,6 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        $('#get-directions').click(function(){
-                                   var address = $('#detail-where span').text();
-                                   var url = 'http://maps.google.com/maps?';
-                                   url += 'q=' + address;
-                                   url += '&z=15';
-                                   window.location = url;
-                                   });
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -88,6 +81,7 @@ var app = {
                             $('#detail-descr').text(descr);
                             $('#detail-when span').text(when);
                             $('#detail-where span').text(where);
+                            $('#get-directions').attr('href', 'https://maps.google.com/maps?q=' + where);
                         }
                     });
               });
