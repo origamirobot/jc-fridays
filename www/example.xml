@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gCal='http://schemas.google.com/gCal/2005' xmlns:gd='http://schemas.google.com/g/2005'>
+    <id>http://www.google.com/calendar/feeds/8otjiavcmms4i4i1bddmf78h58%40group.calendar.google.com/public/full</id>
+    <updated>2013-02-04T23:22:29.000Z</updated>
+    <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/g/2005#event'/>
+    <title type='text'>JC Fridays</title>
+    <subtitle type='text'/>
+    <link rel='alternate' type='text/html' href='https://www.google.com/calendar/embed?src=8otjiavcmms4i4i1bddmf78h58%40group.calendar.google.com'/>
+    <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://www.google.com/calendar/feeds/8otjiavcmms4i4i1bddmf78h58%40group.calendar.google.com/public/full'/>
+    <link rel='http://schemas.google.com/g/2005#batch' type='application/atom+xml' href='https://www.google.com/calendar/feeds/8otjiavcmms4i4i1bddmf78h58%40group.calendar.google.com/public/full/batch'/>
+    <link rel='self' type='application/atom+xml' href='https://www.google.com/calendar/feeds/8otjiavcmms4i4i1bddmf78h58%40group.calendar.google.com/public/full?max-results=25'/>
+    <author>
+        <name>JC Fridays</name>
+    </author>
+    <generator version='1.0' uri='http://www.google.com/calendar'>Google Calendar</generator>
+    <openSearch:totalResults>2</openSearch:totalResults>
+    <openSearch:startIndex>1</openSearch:startIndex>
+    <openSearch:itemsPerPage>25</openSearch:itemsPerPage>
+    <gCal:timezone value='America/New_York'/>
+    <gCal:timesCleaned value='0'/>
+    <gd:where valueString='New Jersey'/>
+    <entry>
+        <id>http://www.google.com/calendar/feeds/8otjiavcmms4i4i1bddmf78h58%40group.calendar.google.com/public/full/3aa3nedhcqpa8cgncqk143s63g</id>
+        <published>2013-02-04T23:22:29.000Z</published>
+        <updated>2013-02-04T23:22:29.000Z</updated>
+        <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/g/2005#event'/>
+        <title type='text'>Party at Lucky 7's</title>
+        <content type='text'>Super awesome party with booze and stuff.</content>
+        <link rel='alternate' type='text/html' href='https://www.google.com/calendar/event?eid=M2FhM25lZGhjcXBhOGNnbmNxazE0M3M2M2cgOG90amlhdmNtbXM0aTRpMWJkZG1mNzhoNThAZw' title='alternate'/>
+        <link rel='self' type='application/atom+xml' href='https://www.google.com/calendar/feeds/8otjiavcmms4i4i1bddmf78h58%40group.calendar.google.com/public/full/3aa3nedhcqpa8cgncqk143s63g'/>
+        <author>
+            <name>JC Fridays</name>
+        </author>
+        <gd:comments>
+            <gd:feedLink href='https://www.google.com/calendar/feeds/8otjiavcmms4i4i1bddmf78h58%40group.calendar.google.com/public/full/3aa3nedhcqpa8cgncqk143s63g/comments'/>
+        </gd:comments>
+        <gd:eventStatus value='http://schemas.google.com/g/2005#event.confirmed'/>
+        <gd:where valueString='322 2nd St, Jersey City, NJ'/>
+        <gd:who email='8otjiavcmms4i4i1bddmf78h58@group.calendar.google.com' rel='http://schemas.google.com/g/2005#event.organizer' valueString='JC Fridays'/>
+        <gd:when endTime='2013-01-29T19:30:00.000-05:00' startTime='2013-01-29T18:30:00.000-05:00'/>
+        <gd:transparency value='http://schemas.google.com/g/2005#event.opaque'/>
+        <gCal:anyoneCanAddSelf value='false'/>
+        <gCal:guestsCanInviteOthers value='true'/>
+        <gCal:guestsCanModify value='false'/>
+        <gCal:guestsCanSeeGuests value='true'/>
+        <gCal:sequence value='0'/>
+        <gCal:uid value='3aa3nedhcqpa8cgncqk143s63g@google.com'/>
+    </entry>
+    <entry>
+        <id>http://www.google.com/calendar/feeds/8otjiavcmms4i4i1bddmf78h58%40group.calendar.google.com/public/full/933frcrf9t36opi6jcrc7b1ql0</id>
+        <published>2013-02-04T22:44:09.000Z</published>
+        <updated>2013-02-04T22:44:09.000Z</updated>
+        <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/g/2005#event'/>
+        <title type='text'>Test Event</title>
+        <content type='text'/>
+        <link rel='alternate' type='text/html' href='https://www.google.com/calendar/event?eid=OTMzZnJjcmY5dDM2b3BpNmpjcmM3YjFxbDAgOG90amlhdmNtbXM0aTRpMWJkZG1mNzhoNThAZw' title='alternate'/>
+        <link rel='self' type='application/atom+xml' href='https://www.google.com/calendar/feeds/8otjiavcmms4i4i1bddmf78h58%40group.calendar.google.com/public/full/933frcrf9t36opi6jcrc7b1ql0'/><author><name>JC Fridays</name></author><gd:comments><gd:feedLink href='https://www.google.com/calendar/feeds/8otjiavcmms4i4i1bddmf78h58%40group.calendar.google.com/public/full/933frcrf9t36opi6jcrc7b1ql0/comments'/></gd:comments><gd:eventStatus value='http://schemas.google.com/g/2005#event.confirmed'/><gd:where valueString='338 Grove Street Apt 2A, Jersey City, NJ, 07302'/><gd:who email='8otjiavcmms4i4i1bddmf78h58@group.calendar.google.com' rel='http://schemas.google.com/g/2005#event.organizer' valueString='JC Fridays'/><gd:when endTime='2013-02-08' startTime='2013-02-07'/><gd:transparency value='http://schemas.google.com/g/2005#event.transparent'/><gCal:anyoneCanAddSelf value='false'/><gCal:guestsCanInviteOthers value='true'/><gCal:guestsCanModify value='false'/><gCal:guestsCanSeeGuests value='true'/><gCal:sequence value='0'/><gCal:uid value='933frcrf9t36opi6jcrc7b1ql0@google.com'/></entry></feed>
