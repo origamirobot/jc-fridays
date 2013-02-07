@@ -30,17 +30,6 @@
     </head>
     <body>
 
-	<div id="fb-root"></div>
-	<script>
-		(function (d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=141692722658682";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
-
         <div data-role="page" id="main-page">
             
             <div data-role="header">
@@ -55,7 +44,7 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#main-page" data-icon="search" class="ui-btn-active ui-state-persist">Events</a></li>
-						<li><a href="#blog" data-icon="grid">Blog</a></li>
+						<li><a href="#contact" data-icon="grid">Contact</a></li>
 						<li><a href="#about" data-icon="info">About</a></li>
 					</ul>
 				</div>                
@@ -82,7 +71,7 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#main-page" data-icon="search" class="ui-btn-active ui-state-persist">Events</a></li>
-						<li><a href="#blog" data-icon="grid">Blog</a></li>
+						<li><a href="#contact" data-icon="grid">Contact</a></li>
 						<li><a href="#about" data-icon="info">About</a></li>
 					</ul>
 				</div>                
@@ -91,19 +80,41 @@
         </div>
        
 	   
-        <div data-role="page" id="blog">
+        <div data-role="page" id="contact">
             <div data-role="header">
-                <h1>JC Fridays Blog</h1>
+                <h1>Contact</h1>
             </div>
             
             <div data-role="content">
+				<h2>Art House</h2>
+				<a href="tel:+1-201-915-9911" data-role="button">Phone</a>
+				<a href="#" data-role="button">Email</a>
+				<a href="#" data-role="button">Facebook</a>
+				<a href="#" data-role="button">Twitter</a>
+				<h2>Click Ninjas</h2>
+				<a href="#" data-role="button">Website</a>
+				<a href="#" data-role="button">Facebook</a>
+				<a href="#" data-role="button">Twitter</a>
+
+
+				<!--
+				<h2>Art House</h2>
+				<a href="tel:+1-201-915-9911" data-role="button">Phone</a>
+				<a href="mailto:info@arthouseproductions.com" data-role="button">Email</a>
+				<a href="http://www.facebook.com/pages/Art-House-Productions/128841263846975" data-role="button">Facebook</a>
+				<a href="http://twitter.com/njarthouse" data-role="button">Twitter</a>
+				<h2>Click Ninjas</h2>
+				<a href="http://www.clickninjas.com" data-role="button">Website</a>
+				<a href="http://www.facebook.com/pages/Click-Ninjas/122527624426193?fref=ts" data-role="button">Facebook</a>
+				<a href="http://twitter.com/clickninjas" data-role="button">Twitter</a>
+				-->
 
             </div>
             <div data-role="footer" data-position="fixed">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#main-page" data-icon="search">Events</a></li>
-						<li><a href="#blog" data-icon="grid" class="ui-btn-active ui-state-persist">Blog</a></li>
+						<li><a href="#contact" data-icon="grid" class="ui-btn-active ui-state-persist">Contact</a></li>
 						<li><a href="#about" data-icon="info">About</a></li>
 					</ul>
 				</div>                
@@ -134,7 +145,7 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#main-page" data-icon="search">Events</a></li>
-						<li><a href="#blog" data-icon="grid">Blog</a></li>
+						<li><a href="#contact" data-icon="grid">Contact</a></li>
 						<li><a href="#about" data-icon="info" class="ui-btn-active ui-state-persist">About</a></li>
 					</ul>
 				</div>                

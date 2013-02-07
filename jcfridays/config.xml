@@ -30,7 +30,7 @@
     <preference name="ShowSplashScreenSpinner" value="true" />
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
     <preference name="AllowInlineMediaPlayback" value="false" />
-    <preference name="OpenAllWhitelistURLsInWebView" value="false" />
+    <preference name="OpenAllWhitelistURLsInWebView" value="true" />
     <preference name="BackupWebStorage" value="cloud" />
 
     <plugins>
@@ -54,6 +54,5 @@
         <plugin name="Globalization" value="CDVGlobalization" />
         <plugin name="InAppBrowser" value="CDVInAppBrowser" />
     </plugins>
-
     <access origin="*" />
 </cordova>
