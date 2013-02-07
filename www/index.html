@@ -29,6 +29,18 @@
        <title>JC Fridays</title>
     </head>
     <body>
+
+	<div id="fb-root"></div>
+	<script>
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=141692722658682";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
         <div data-role="page" id="main-page">
             
             <div data-role="header">
@@ -107,9 +119,16 @@
             </div>
             
             <div data-role="content">
-				<p>Based in Jersey City, Art House Productions inspires, nurtures annnnnd promotes the arts in our community through accessible, multi-diciplinary initiatives including JC Fridays.</p>
+				<div style="text-align:center">
+					<img src="img/logo_arthouse.gif" />
+				</div>
+				<p>Based in Jersey City, Art House Productions inspires, nurtures and promotes the arts in our community through accessible, multi-diciplinary initiatives including JC Fridays.</p>
 				<p>JC Fridays is a quarterly arts festival held throughout Jersey City at the start of every season: March, June, September, December. Local businesses and arts organizations join together to celebrate art and culture with a wide range of free events for the public. Programs include art openings and exhibits, music, performance, film/video screenings and more.</p>
+				<div style="text-align:center;">
+					<img src="img/logo_clickninjas.gif" />
+				</div>
 				<p>This application is built by the Click Ninjas development house.  Like us on Facebook!</p>
+				<div class="fb-like" data-href="http://www.facebook.com/pages/Click-Ninjas/122527624426193?fref=ts" data-send="true" data-width="450" data-show-faces="true"></div>
             </div>
             <div data-role="footer" data-position="fixed">
 				<div data-role="navbar">

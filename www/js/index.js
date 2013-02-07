@@ -81,7 +81,7 @@ var app = {
                             $('#detail-descr').text(descr);
                             $('#detail-when span').text(when);
                             $('#detail-where span').text(where);
-                            $('#get-directions').attr('href', 'https://maps.google.com/maps?q=' + where);
+                            $('#get-directions').attr('href', 'maps:q=' + where);
                         }
                     });
               });
