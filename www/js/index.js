@@ -50,7 +50,9 @@ var app = {
     
     calendar: null,
     selectedId: null,
-    loadCalendar: function(){
+    loadCalendar: function () {
+
+
         $.ajax({
             url: 'https://www.google.com/calendar/feeds/8otjiavcmms4i4i1bddmf78h58%40group.calendar.google.com/public/full',
             dataType: 'xml',
@@ -77,6 +79,8 @@ var app = {
                             var descr = $(this).find('content').text();
                             var where = $(this).find('where').attr('valueString');
                             var when = $(this).find('when').attr('startTime');
+                            when = new Date(when).toLocaleString();
+
                             $('#detail-title').text(title);
                             $('#detail-descr').text(descr);
                             $('#detail-when span').text(when);
@@ -95,3 +99,9 @@ var app = {
     
     
 };
+
+
+
+$(document).ready(function () {
+
+});
