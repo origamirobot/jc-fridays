@@ -778,7 +778,7 @@ static void _CDVJKArrayRemoveObjectAtIndex(CDVJKArray *array, NSUInteger objectI
 #else
   anObject = [anObject retain];
 #endif
-  _CDVJKArrayInsertObjectAtIndex(self, anObject, objectIndex);
+  _CDVJKArrayInsertObjectAtIndex(self, anObject, objectIndex)   ;
   mutations = (mutations == NSUIntegerMax) ? 1UL : mutations + 1UL;
 }
 
