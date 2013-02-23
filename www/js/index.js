@@ -58,37 +58,50 @@ var app = {
             dataType: 'xml',
             success: function(xml){
                app.calendar = xml;
-               
-               $(xml).find('entry').each( function() {
+               var hasEvents = false;
+               $(xml).find('entry').each( function(){
                     var id = $(this).find('id').text();
                     var title = $(this).find('title').text();
                     var descr = $(this).find('content').text();
-                    var html = '<li data-wrapperels="div" data-icon="arrow-r" data-iconpos="right">';
-                    html += '<a href="#detail" data-calid="' +  id + '" class="ui-link-inherit" data-transition="slide">';
-                    html += '<h3 class="ui-li-heading">' + title + '</h3>';
-                    html += '<p class="ui-li-desc">' + descr + '</p>';
-                    html += '</a></li>';
-                    $(html).appendTo($('#event-list'));
+                    var when = new Date($(this).find('when').attr('startTime'));
+                    var now = new Date();
+                    now.setDate(new Date().getDate() - 1);
+                    if(when > now){
+                                         
+                        var html = '<li data-wrapperels="div" data-icon="arrow-r" data-iconpos="right">';
+                        html += '<a href="#detail" data-calid="' +  id + '" class="ui-link-inherit" data-transition="slide">';
+                        html += '<h3 class="ui-li-heading">' + title + '</h3>';
+                        html += '<p class="ui-li-desc">' + descr + '</p>';
+                        html += '</a></li>';
+                        $(html).appendTo($('#event-list'));
+                        hasEvents = true;
+                    }
                });
-               $('#event-list').listview('refresh');
-               $('#event-list a').click(function(){
-                    app.selectedId = $(this).data('calid');
-                    $(app.calendar).find('entry').each( function() {
-                        if($(this).find('id').text() == app.selectedId){
-                            var title = $(this).find('title').text();
-                            var descr = $(this).find('content').text();
-                            var where = $(this).find('where').attr('valueString');
-                            var when = $(this).find('when').attr('startTime');
-                            when = new Date(when).toLocaleString();
-
-                            $('#detail-title').text(title);
-                            $('#detail-descr').text(descr);
-                            $('#detail-when span').text(when);
-                            $('#detail-where span').text(where);
-                            $('#get-directions').attr('href', 'maps:q=' + where);
-                        }
-                    });
-              });
+               
+               if(!hasEvents){
+                    $('#no-events').show();
+               } else {
+                   $('#no-events').hide();
+                   $('#event-list').listview('refresh');
+                   $('#event-list a').click(function(){
+                        app.selectedId = $(this).data('calid');
+                        $(app.calendar).find('entry').each( function() {
+                            if($(this).find('id').text() == app.selectedId){
+                                var title = $(this).find('title').text();
+                                var descr = $(this).find('content').text();
+                                var where = $(this).find('where').attr('valueString');
+                                var when = $(this).find('when').attr('startTime');
+                                when = new Date(when).toLocaleString();
+                                                           
+                                $('#detail-title').text(title);
+                                $('#detail-descr').text(descr);
+                                $('#detail-when span').text(when);
+                                $('#detail-where span').text(where);
+                                $('#get-directions').attr('href', 'maps:q=' + where);
+                            }
+                        });
+                  });
+               }
             }
         });
     }
