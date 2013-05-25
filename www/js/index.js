@@ -54,7 +54,7 @@ var app = {
 
 
         $.ajax({
-            url: 'https://www.google.com/calendar/feeds/5v4njqd7sdfnmo7r6mlem3i1j8%40group.calendar.google.com/public/full',
+            url: 'https://www.google.com/calendar/feeds/5v4njqd7sdfnmo7r6mlem3i1j8%40group.calendar.google.com/public/full?max-results=999999',
             dataType: 'xml',
             success: function(xml){
                app.calendar = xml;
